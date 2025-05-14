@@ -19,7 +19,7 @@ def about():
 
 @app.get("/random/")
 def random():
-    randNum = randint(1, 1000 )
+    randNum = randint(1, 100000000000000000000000000000000000 )
     return render_template("pages/random.jinja" , number=randNum)
 
 @app.errorhandler(404)
